@@ -24,12 +24,14 @@ class Musicbox:
     def play(self):
         for letter in self.__sequence:
             playsound.playsound(f"sounds/{letter}.mp3")
+
     def next(self):
         self.__sequence += choice(self.__variants)
+
     def check(self, guess):
         if guess == self.__sequence:
             playsound.playsound("sounds/emd.mp3")
-        else: #не угадали нигадяи
+        else:  # не угадали нигадяи
             playsound.playsound("sounds/emd.mp3")
 
 
@@ -44,14 +46,8 @@ player.play()
 # playsound.playsound("sounds/d.mp3")
 
 
-
-
-
-
-
 #
 #
 # super - наследование
 # магический
 # метод - полиморфизм
-
