@@ -4,5 +4,5 @@ x = int(input(' put ur fk word'))
 try:
     result= 6/x
 except ZeroDivisionError:
-    print('eblan?')
+    print('k?')
 else:
